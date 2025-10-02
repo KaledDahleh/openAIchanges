@@ -1,11 +1,11 @@
 # OpenAI Changes Demo
 
-I always thought it would be cool to have a chatbot that could change its tone on the fly — concise, detailed, casual, or professional. So I built a simple Flask app that does exactly that.  
+I always thought it would be cool to have a chatGPT let you choose its tone without having to specify it in prompt, so I built a simple Flask app that lets you choose between concise, detailed, casual, or professional. 
 
-It’s lightweight, easy to extend, and meant as a playground for experimenting with prompt-engineering ideas.  
+It’s lightweight and easy to extend, and can be used to help aid research efforts chatGPT.  
 
 ## How to Run
-1. Clone this repo  
+1. Clone
 2. Install requirements:  
    ```bash
    pip install flask
@@ -17,7 +17,7 @@ It’s lightweight, easy to extend, and meant as a playground for experimenting 
 4. Send a POST request to `/chat` with JSON like:  
    ```json
    {
-     "message": "Explain AI in simple terms",
+     "message": "Explain what life is like in Chicago",
      "tone": "casual"
    }
    ```
@@ -29,5 +29,3 @@ It’s lightweight, easy to extend, and meant as a playground for experimenting 
 - `professional`  
 
 ---
-
-This is just a starting point — I’ll keep tweaking as I go.  
